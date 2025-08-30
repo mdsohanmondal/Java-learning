@@ -58,18 +58,25 @@ public class Methods{
 
 
     public static String dynamicTemperature(){
+        // input values from user in scanner object and create scanner class
         Scanner sc = new Scanner(System.in);
         String tempType;
         System.out.println("Please type C or F to convert your Temperature");
+        // Get temperature type input from the user (Celsius or Fahrenheit)
         tempType = sc.next();
+
         float tempVal;
         if(tempType.equals("C")){
-            System.out.println("Please type your Celsius number to return Fahrenheit value");
+            System.out.print("Please Enter your Celsius number to return Fahrenheit value: ");
+            // Get value from user and store it
             tempVal = sc.nextInt();
+            // return and converting Celsius 
             return "Your Celsius value is: " + tempVal + " to convert Fahrenheit: " + ((tempVal * 9f / 5f) + 32);
         }if (tempType.equals("F")){
-            System.out.println("Please type your Fahrenheit number to return Celsius value");
+            System.out.print("Please Enter your Fahrenheit number to return Celsius value: ");
+            // Get value from user and store it
             tempVal = sc.nextInt();
+             // return and converting Fahrenheit 
             return "Your Fahrenheit value is: " + tempVal + " to convert Celsius: " + ((tempVal - 32) * (5f / 9f));
         }else{
             return "Something went wrong";
