@@ -1,7 +1,7 @@
 public class Array{
     public static void main(String[] args) {
 
-        int[] number ={12,33,1,3,4,5,2};
+        int[] number = {12,33,1,3,4,5,2};
         for(int i = 0; i< number.length - 1; i++){
             System.out.println(number[i]);
         }
